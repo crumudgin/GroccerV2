@@ -92,6 +92,50 @@ public class DB
         addTable("CREATE TABLE "+tableName +" ("+ contents+")");
     }
 
+    public ResultSet selectTable(String table)
+    {
+        try
+        {
+            Statement stmt = c.createStatement();
+            return stmt.executeQuery("SELECT * FROM " + table +";");
+        }
+        catch (Exception e)
+        {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+        return null;
+    }
+
+    public void deleteItem(String tableName, String identifier, String item)
+    {
+        try
+        {
+            Statement stmt = c.createStatement();
+            stmt.executeUpdate("Delete from "+ tableName + " where "+ identifier + "=" + item +";");
+            stmt.close();
+        }
+        catch (Exception e)
+        {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+    }
+
+    public void deleteTable(String tableName)
+    {
+        try
+        {
+            Statement stmt = c.createStatement();
+            stmt.executeUpdate("DROP TABLE "+tableName +";");
+            stmt.close();
+        }
+        catch (Exception e)
+        {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+    }
 
     public void initDB()
     {
@@ -102,17 +146,10 @@ public class DB
                       "Description VARCHAR(1000)"};
         String[] valueNames = {"Name","Price","Description"};
         String[] values = {"'food'","10.00","'foooooood'"};
-        addTable("FoodItems", table);
-        addItem("FoodItems", valueNames, values);
+//        addTable("FoodItems", table);
+//        addItem("FoodItems", valueNames, values);
         try
         {
-            Statement stmt = c.createStatement();
-//            String sql = "DROP TABLE FoodItems";
-            stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM FoodItems;" );
-            System.out.println(rs.getString("Name"));
-//            stmt.executeUpdate(sql);
-            stmt.close();
             c.commit();
             c.close();
         }
