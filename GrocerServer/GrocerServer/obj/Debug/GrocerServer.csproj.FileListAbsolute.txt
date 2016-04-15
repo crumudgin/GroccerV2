@@ -1,0 +1,14 @@
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\GrocerServer.exe.config
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\GrocerServer.exe
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\GrocerServer.pdb
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\EntityFramework.dll
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\System.Data.SQLite.dll
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\System.Data.SQLite.EF6.dll
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\System.Data.SQLite.Linq.dll
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\EntityFramework.xml
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\bin\Debug\System.Data.SQLite.xml
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\obj\Debug\GrocerServer.csprojResolveAssemblyReference.cache
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\obj\Debug\GrocerServer.exe
+c:\users\zac\documents\visual studio 2015\Projects\GrocerServer\GrocerServer\obj\Debug\GrocerServer.pdb
